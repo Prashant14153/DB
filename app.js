@@ -22,6 +22,16 @@ app.get('/update', async (req, res) => {
     res.send(updatedUser);
 });
 
+app.get("/read" ,async (req,res,next)=> {
+    const users = await User.find();
+    res.send(users)
+})
+
+app.get("/delete" ,async (req,res,next)=> {
+    const deletedUser = await User.deleteOne({userName : "NodeJS"})
+    res.send(deletedUser)
+})
+
 
 
 

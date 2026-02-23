@@ -1,0 +1,33 @@
+# Node
+node_modules/
+npm-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Env files (keep out of repo)
+.env
+.env.local
+.env.*.local
+
+# Build / output
+dist/
+build/
+coverage/
+
+# Logs
+logs/
+*.log
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Certificates / keys
+*.pem
+*.key
+
+# Optional lockfiles you may want to keep
+# package-lock.json
+# yarn.lock
